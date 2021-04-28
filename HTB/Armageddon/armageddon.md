@@ -98,7 +98,8 @@ Decode the hash with john!
  	$ john --wordlist=/usr/share/wordlists/rockyou.txt hash
 
 After get password then login with ssh
-`$ ssh brucetherealadmin@10.10.10.223`
+	
+	$ ssh brucetherealadmin@10.10.10.223
 
 	cat user.txt
 	5a6248b6566cd486acdb64905cfc687c
