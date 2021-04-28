@@ -40,21 +40,15 @@ After getting meterpreter session then open the shell and look for settings.php
 
 while look into settings.php got mysql credentials.
 
-database' => 'drupal',
-
-'username' => 'drupaluser',
-
-'password' => 'CQHE****3gBVj'
-
-'host' => 'localhost',
-
-'port' => ''
-
-'driver' => 'mysql',
-
-'prefix' => ''
+`database' => 'drupal',
+	'username' => 'drupaluser',
+	'password' => 'CQHE****3gBVj'
+	'host' => 'localhost',	
+	'port' => ''
+	'driver' => 'mysql',
+	'prefix' => ''
 `
-`
+look into myql 
 
 	$ mysql -u drupaluser -h localhost -p
 	password: CQHE****3gBVj
