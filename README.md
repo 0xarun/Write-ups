@@ -4,6 +4,7 @@ I am [0xarun](https://instagram.com/0xarun) this repo for my own CTF's notes.
 
 # Hackthebox
 Armageddon Write-up (notes)
+Ready Write-up (notes)
 
 # Tryhackme
 https://0xarun.medium.com/
