@@ -1,4 +1,6 @@
 # Write-ups
+Own notes
+
 
 I am [0xarun](https://instagram.com/0xarun) this repo for my own CTF's notes. 
 
