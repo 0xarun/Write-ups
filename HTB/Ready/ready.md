@@ -18,7 +18,7 @@ https://app.hackthebox.eu/machines/Ready
     | http-title: Sign in \xC2\xB7 GitLab
     |_Requested resource was http://10.10.10.220:5080/users/sign_in
     |_http-trane-info: Problem with XML parsing of /evox/about
-  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 open port http 5080 its GitLab....
 
