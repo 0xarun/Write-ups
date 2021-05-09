@@ -1,5 +1,5 @@
 # Kiba
-tryhackme.com/room/kiba
+https://tryhackme.com/room/kiba
 
 #### Nmap
 
@@ -30,15 +30,21 @@ kabooom we got reverse shell.....
 
 thennnn go for privesc using Capabilities 
 
-what is Capabilities 
+### what is Capabilities 
 
 Linux divides these privileges into distinct units, known as capabilities. These capabilities can be added to an executable, which will give any user running that executable the specific superuser privilege defined by the capability
 
-ls -la in kiba we have got dir like .hackmeplease then cd to the dir we got python3 ahhh this is executable to capabilities
+    ls -la
+
+In kiba we have got dir like
+
+    .hackmeplease
+
+then cd to the dir we got python3 ahhh this is executable to capabilities
 
 then searching into google like 
 
-Exploiting capability using python3
+#### Exploiting capability using python3
 
 Assuming an intruder has compromised the host machine as local user and spawn the least privilege shell and he looked for system capabilities and found empty capability (ep) over suid is given python3 for user demo that means all privilege is assigned to user for that program, therefore taking advantage of this permission he can escalate into high privilege from low privilege shell.
 
