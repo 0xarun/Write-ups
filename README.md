@@ -23,5 +23,9 @@ thompson Write-up (notes)
 
 [Boiler-CTF Tryhackme writeup](https://0xarun.medium.com/boiler-ctf-tryhackme-writeup-59df8bab0a4a)
 
+```html
+<script src="https://tryhackme.com/badge/205154"></script>
+```
+
 
 Thank you!
