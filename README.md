@@ -7,8 +7,13 @@ Armageddon Write-up (notes)
 
 Ready Write-up (notes)
 
+Love Write-up (notes)
+
 # Tryhackme
-https://0xarun.medium.com/
+
+Kiba Write-up (notes)
+
+sustah Write-up (notes)
 
 [Different-CTF Tryhackme Write-up](https://0xarun.medium.com/different-ctf-tryhackme-write-up-e43a716a4c8a)
 
