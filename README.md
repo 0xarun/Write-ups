@@ -19,6 +19,8 @@ thompson Write-up (notes)
 
 retro Write-up (notes)
 
+Blueprint Write-up (notes)
+
 [Different-CTF Tryhackme Write-up](https://0xarun.medium.com/different-ctf-tryhackme-write-up-e43a716a4c8a)
 
 [Misguided Ghosts CTF Tryhackme Write-up](https://0xarun.medium.com/misguided-ghosts-ctf-tryhackme-write-up-828b2d87e90d)
