@@ -143,6 +143,8 @@ Target: https://seal.htb/
 
 In this dirsearch /manager/status/all is tomcat lets login with our crendentials
 
+https://seal.htb/manager/status/..;/html
+
 Its tomcat/9.0.31 vulnerable to path traversal we have to upload a file  
 
 ```bash
@@ -179,3 +181,11 @@ tomcat@seal:/var/lib/tomcat9$
 	uid=0(root) gid=0(root) groups=0(root)
 	
 ## Rooted
+
+### References
+
+https://access.redhat.com/security/cve/cve-2020-1938
+
+https://www.acunetix.com/vulnerabilities/web/tomcat-path-traversal-via-reverse-proxy-mapping/
+
+https://gtfobins.github.io/gtfobins/ansible-playbook/#sudo
