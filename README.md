@@ -9,6 +9,8 @@ Ready Write-up (notes)
 
 Love Write-up (notes)
 
+Seal Write-up (notes)
+
 # Tryhackme
 
 Kiba Write-up (notes)
