@@ -141,7 +141,7 @@ Now its time to crack! 7-zip coz file cammnd shows "7-zip archive data"
 
 Hash crakced **tigerlily** 
 
-Got some wordlists and some username like girlfrind "lily" lets run brutefrom accordingly to lily.
+Got some wordlists and some username like girlfriend "lily" lets run brutefroce accordingly to lily.
 
 ```bash
 ┌──(arundhanush㉿kali)-[~/CTF/THM/cherryblossom/wordlist]
@@ -160,7 +160,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-12-23 05:05:
 
 ```
 
-ssh as lily no user.txt file move to johan
+ssh as lily there is no user.txt file then move to another user johan
 
 	cat /var/backups/shadow.bak
 
