@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Wed Dec 22 12:04:44 2021 as: nmap -v -sC -oA nmap/cherryblossom-full-ports -p- --min-rate=10000 10.10.80.204
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.80.204 ()	Status: Up
+Host: 10.10.80.204 ()	Ports: 22/open/tcp//ssh///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds//Samba smbd 4.7.6-Ubuntu/
+# Nmap done at Wed Dec 22 12:07:29 2021 -- 1 IP address (1 host up) scanned in 165.28 seconds

@@ -1,0 +1,47 @@
+# Nmap 7.91 scan initiated Wed Dec 22 12:04:44 2021 as: nmap -v -sC -oA nmap/cherryblossom-full-ports -p- --min-rate=10000 10.10.80.204
+Increasing send delay for 10.10.80.204 from 0 to 5 due to 214 out of 711 dropped probes since last increase.
+Increasing send delay for 10.10.80.204 from 5 to 10 due to 150 out of 499 dropped probes since last increase.
+Increasing send delay for 10.10.80.204 from 20 to 40 due to 130 out of 431 dropped probes since last increase.
+Increasing send delay for 10.10.80.204 from 160 to 320 due to 454 out of 1511 dropped probes since last increase.
+Warning: 10.10.80.204 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.80.204
+Host is up (0.21s latency).
+Not shown: 49802 filtered ports, 15730 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+|_ssh-hostkey: ERROR: Script execution failed (use -d to debug)
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_clock-skew: mean: 7h00m57s, deviation: 4s, median: 7h00m56s
+| nbstat: NetBIOS name: UBUNTU, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   UBUNTU<00>           Flags: <unique><active>
+|   UBUNTU<03>           Flags: <unique><active>
+|   UBUNTU<20>           Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: cherryblossom
+|   NetBIOS computer name: UBUNTU\x00
+|   Domain name: \x00
+|   FQDN: cherryblossom
+|_  System time: 2021-12-22T13:37:58+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-12-22T13:37:55
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Wed Dec 22 12:07:29 2021 -- 1 IP address (1 host up) scanned in 165.28 seconds

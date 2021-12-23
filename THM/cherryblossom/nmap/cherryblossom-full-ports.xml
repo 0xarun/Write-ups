@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Dec 22 12:04:44 2021 as: nmap -v -sC -oA nmap/cherryblossom-full-ports -p- -&#45;min-rate=10000 10.10.80.204 -->
+<nmaprun scanner="nmap" args="nmap -v -sC -oA nmap/cherryblossom-full-ports -p- -&#45;min-rate=10000 10.10.80.204" start="1640154884" startstr="Wed Dec 22 12:04:44 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1640154884"/>
+<taskend task="NSE" time="1640154884"/>
+<taskbegin task="NSE" time="1640154884"/>
+<taskend task="NSE" time="1640154884"/>
+<taskbegin task="Ping Scan" time="1640154884"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.80.204" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1640154885" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1640154885"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1640154885"/>
+<taskbegin task="Connect Scan" time="1640154885"/>
+<taskprogress task="Connect Scan" time="1640154910" percent="34.40" remaining="48" etc="1640154958"/>
+<taskprogress task="Connect Scan" time="1640154910" percent="34.61" remaining="48" etc="1640154957"/>
+<taskprogress task="Connect Scan" time="1640154911" percent="35.44" remaining="48" etc="1640154958"/>
+<taskprogress task="Connect Scan" time="1640154959" percent="67.09" remaining="37" etc="1640154995"/>
+<taskend task="Connect Scan" time="1640155016" extrainfo="65535 total ports"/>
+<taskbegin task="NSE" time="1640155016"/>
+<taskend task="NSE" time="1640155049"/>
+<taskbegin task="NSE" time="1640155049"/>
+<taskend task="NSE" time="1640155049"/>
+<host starttime="1640154884" endtime="1640155049"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.80.204" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="49802">
+<extrareasons reason="no-responses" count="49802"/>
+</extraports>
+<extraports state="closed" count="15730">
+<extrareasons reason="conn-refused" count="15730"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="ERROR: Script execution failed (use -d to debug)"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Samba smbd" version="4.7.6-Ubuntu" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 7h00m57s, deviation: 4s, median: 7h00m56s"><elem key="count">3</elem>
+<elem key="stddev">4</elem>
+<elem key="mean">25257</elem>
+<elem key="median">25256</elem>
+</script><script id="nbstat" output="NetBIOS name: UBUNTU, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)&#xa;Names:&#xa;  UBUNTU&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  UBUNTU&lt;03&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  UBUNTU&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1d&gt;        Flags: &lt;unique&gt;&lt;active&gt;&#xa;  WORKGROUP&lt;1e&gt;        Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.7.6-Ubuntu)&#xa;  Computer name: cherryblossom&#xa;  NetBIOS computer name: UBUNTU\x00&#xa;  Domain name: \x00&#xa;  FQDN: cherryblossom&#xa;  System time: 2021-12-22T13:37:58+00:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.7.6-Ubuntu</elem>
+<elem key="server">UBUNTU\x00</elem>
+<elem key="date">2021-12-22T13:37:58+00:00</elem>
+<elem key="fqdn">cherryblossom</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2021-12-22T13:37:55&#xa;  start_date: N/A"><elem key="date">2021-12-22T13:37:55</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="209028" rttvar="2086" to="217372"/>
+</host>
+<taskbegin task="NSE" time="1640155049"/>
+<taskend task="NSE" time="1640155049"/>
+<taskbegin task="NSE" time="1640155049"/>
+<taskend task="NSE" time="1640155049"/>
+<runstats><finished time="1640155049" timestr="Wed Dec 22 12:07:29 2021" summary="Nmap done at Wed Dec 22 12:07:29 2021; 1 IP address (1 host up) scanned in 165.28 seconds" elapsed="165.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
