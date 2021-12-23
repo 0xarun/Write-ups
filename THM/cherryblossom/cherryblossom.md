@@ -122,7 +122,7 @@ Journal.ctz: 7-zip archive data, version 0.4
 
 ```
 
-Yeah .ctz is cherrytree file. Cherrytree is default on kali machine but we can't open its ask passwd
+Yeah .ctz is cherrytree file. Cherrytree is default on kali machine. but we can't open the file journal.ctz its ask passwd
 
 Now its time to crack! 7-zip coz file cammnd shows "7-zip archive data"
 
