@@ -1,0 +1,30 @@
+# Nmap 7.91 scan initiated Fri Dec 24 04:29:01 2021 as: nmap -sC -sV -p 21,22,23,25,80,88,106,110,389,873,2000,2121,5666,10000 -oA nmap/inferno 10.10.173.134
+Nmap scan report for 10.10.173.134
+Host is up (0.34s latency).
+
+PORT      STATE  SERVICE          VERSION
+21/tcp    open   ftp?
+22/tcp    open   ssh              OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d7:ec:1a:7f:62:74:da:29:64:b3:ce:1e:e2:68:04:f7 (RSA)
+|   256 de:4f:ee:fa:86:2e:fb:bd:4c:dc:f9:67:73:02:84:34 (ECDSA)
+|_  256 e2:6d:8d:e1:a8:d0:bd:97:cb:9a:bc:03:c3:f8:d8:85 (ED25519)
+23/tcp    open   telnet?
+25/tcp    open   smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp    open   http             Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Dante's Inferno
+88/tcp    open   kerberos-sec?
+106/tcp   open   pop3pw?
+110/tcp   open   pop3?
+389/tcp   open   tcpwrapped
+873/tcp   open   rsync?
+2000/tcp  open   cisco-sccp?
+2121/tcp  closed ccproxy-ftp
+5666/tcp  closed nrpe
+10000/tcp closed snet-sensor-mgmt
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Dec 24 04:31:00 2021 -- 1 IP address (1 host up) scanned in 118.58 seconds

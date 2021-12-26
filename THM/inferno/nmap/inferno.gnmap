@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Fri Dec 24 04:29:01 2021 as: nmap -sC -sV -p 21,22,23,25,80,88,106,110,389,873,2000,2121,5666,10000 -oA nmap/inferno 10.10.173.134
+Host: 10.10.173.134 ()	Status: Up
+Host: 10.10.173.134 ()	Ports: 21/open/tcp//ftp?///, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 23/open/tcp//telnet?///, 25/open/tcp//smtp?///, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/, 88/open/tcp//kerberos-sec?///, 106/open/tcp//pop3pw?///, 110/open/tcp//pop3?///, 389/open/tcp//tcpwrapped///, 873/open/tcp//rsync?///, 2000/open/tcp//cisco-sccp?///, 2121/closed/tcp//ccproxy-ftp///, 5666/closed/tcp//nrpe///, 10000/closed/tcp//snet-sensor-mgmt///
+# Nmap done at Fri Dec 24 04:31:00 2021 -- 1 IP address (1 host up) scanned in 118.58 seconds
