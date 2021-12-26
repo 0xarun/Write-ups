@@ -1,3 +1,7 @@
+# Tryhackme Inferno Writeup
+
+Medium level box
+
 ```bash
 Starting Nmap 7.91 ( https://nmap.org ) at 2021-12-24 04:29 IST
 Nmap scan report for 10.10.173.134
