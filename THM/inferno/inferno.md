@@ -60,7 +60,7 @@ Exploit: Codiad 2.8.4 - Remote Code Execution (Authenticated)
 
 But the problem is here was two login(auth) prompt one /inferno and codiad.
 
-/inferno login request is <basic base64> to run the exploit we have to use this for all every request from exploit accordingly change the exploit. add header "Authorization": "Basic YWRtaW46ZGFudGUx" in exploit.
+/inferno login request has send using header "Authorization": "Basic YWRtaW46ZGFudGUx". To successfully run the exploit we have to use this header for all every request from exploit accordingly change the exploit.
 
 and run the exploit we got www-data shell.
 
@@ -102,8 +102,9 @@ www-data@Inferno:/var/www/html/inferno/components/filemanager$ python3 -c 'impor
 <er$ python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
-And we got shell successfully but the problem is shell not stable it wat ended up there is a service running like 'pkill bash' so use "sh" inseted of "bash" in python spawn shell.
+And we got shell successfully but the problem is here shell not stable it was ended up within minitues, There is a service running that kills tha bash session 'pkill bash', So use "sh" instead of "bash" in python spawn shell.
 
+python -c 'import pty; pty.spawn("/bin/sh")'
 
 ### www-data to dante
 
