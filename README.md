@@ -2,30 +2,34 @@
 
 I am [0xarun](https://instagram.com/0xarun) this repo for my own CTF's notes. 
 
+My small quick writeups
+
 # Hackthebox
-Armageddon Write-up (notes)
+Armageddon Write-up 
 
-Ready Write-up (notes)
+Ready Write-up
 
-Love Write-up (notes)
+Love Write-up
 
-Seal Write-up (notes)
+Seal Write-up
 
 # Tryhackme
 
-Kiba Write-up (notes)
+Kiba Write-up
 
-sustah Write-up (notes)
+sustah Write-up
 
-thompson Write-up (notes)
+thompson Write-up
 
-retro Write-up (notes)
+retro Write-up
 
-Blueprint Write-up (notes)
+Blueprint Write-up
 
-0day Write-up (notes)
+0day Write-up
 
-CherryBlossom (notes)
+CherryBlossom Write-up
+
+Inferno Write-up
 
 [Different-CTF Tryhackme Write-up](https://0xarun.medium.com/different-ctf-tryhackme-write-up-e43a716a4c8a)
 
