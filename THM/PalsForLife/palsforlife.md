@@ -2,9 +2,7 @@
 
 Medium level box in thm.
 
-> Arunkumar (0xarun)
-
------------------------------
+Arunkumar (0xarun)
 
 #### Nmap
 
@@ -17,12 +15,15 @@ Host is up (0.22s latency).
 Not shown: 45668 filtered ports, 19863 closed ports
 PORT      STATE SERVICE  VERSION
 22/tcp    open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+6443/tcp  open  sun-sr-https
 10250/tcp open  ssl/http Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
 30180/tcp open  unknown
 31111/tcp open  unknown
 31112/tcp open  ssh      OpenSSH 7.5 (protocol 2.0)
 1 service unrecognized despite returning data.
 ```
+6443 - kubernetes.default.svc.cluster.local
+
 31111 - Gitea
 
 30180 - Ngnix
@@ -329,7 +330,7 @@ type: Opaque
                                                                                                                                                                       
 ┌──(arundhanush㉿kali)-[~/CTF/THM/palsforlife]
 └─$ echo -n ZmxhZ3tJdHNfbjB0X215X2ZhdWx0IX0= | base64 -d
-flag{Its_n0t_my_fault!}          
+flag{REDACTED}          
 ```
 
 ### Flag 4 (Exploiting pods)
@@ -404,9 +405,5 @@ dev             initrd.img      lib64           mnt             root            
 bash-4.4# cd /host/root
 bash-4.4# ls
 root.txt
-bash-4.4# cat root.txt 
-flag{At_least_I_have_chicKen}
-bash-4.4# 
-
 ```
 
