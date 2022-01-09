@@ -29,6 +29,8 @@ Blueprint Write-up
 
 CherryBlossom Write-up
 
+PalsForLife Write-up
+
 Inferno Write-up
 
 [Different-CTF Tryhackme Write-up](https://0xarun.medium.com/different-ctf-tryhackme-write-up-e43a716a4c8a)
