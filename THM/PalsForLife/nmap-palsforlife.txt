@@ -1,0 +1,10 @@
+Nmap scan report for 10.10.178.163
+Host is up (0.20s latency).
+Not shown: 52237 closed ports, 13293 filtered ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+6443/tcp  open  sun-sr-https
+10250/tcp open  unknown
+30180/tcp open  unknown
+31111/tcp open  unknown
+31112/tcp open  unknown
