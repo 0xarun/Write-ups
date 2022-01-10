@@ -31,6 +31,8 @@ CherryBlossom Write-up
 
 PalsForLife Write-up
 
+frankandherby Write-up
+
 Inferno Write-up
 
 [Different-CTF Tryhackme Write-up](https://0xarun.medium.com/different-ctf-tryhackme-write-up-e43a716a4c8a)
