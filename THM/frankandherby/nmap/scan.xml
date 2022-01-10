@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Nov  6 04:13:38 2021 as: nmap -sC -sV -p 22,3000,25000,31337 -T4 -oA nmap/scan 10.10.73.198 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p 22,3000,25000,31337 -T4 -oA nmap/scan 10.10.73.198" start="1636152218" startstr="Sat Nov  6 04:13:38 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="22,3000,25000,31337"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.73.198" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1636152219" endtime="1636152584"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.73.198" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 64:79:10:0d:72:67:23:80:4a:1a:35:8e:0b:ec:a1:89 (RSA)&#xa;  256 3b:0e:e7:e9:a5:1a:e4:c5:c7:88:0d:fe:ee:ac:95:65 (ECDSA)&#xa;  256 d8:a7:16:75:a7:1b:26:5c:a9:2e:3f:ac:c0:ed:da:5c (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+<elem key="fingerprint">6479100d726723804a1a358e0beca189</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDVZVdzBeNozVqMBvkqTgoMzE1gZdDq9qQo80NRBAbAuwgemIowsSpVnbn98CQIoxjAQ/zbyqu05qDnosP2MVXSwpgFr+D6Wk6nkB2pWSzCwdHsBuNxNkU3RNv9dPb4S1wUNlMOpGhEpyNo50zslBnQN7kz7ZPRHET37+q1aySu2WU9UlvRdsN6ouqoQyH06UGFza0X21wPKmhwG4IjxtSbG0ST5Gi3TBUNs3r4LlmvcY0OgCCpAwjCxjl8V2a/FB/SH9Tg6a3fc815tWaN028nbXMHOvyBW+kW3ETvp5pR+IGBHGXIs0zJhJV/FZSBVRkLF5p53LDrq0eCL+b2yjVLl5keOZPJU2T6encsjkMZB3ynJLqYuojIDYSDzvBVdZFQNFNKIVd67o8yX/J27PusXiXBmVwkk/ZfXaEqzURkDg4car1cV5WOJIRIHxz9V+TZ/OC10er/iBppNrzjmpCJXzzey21OoTpLZ3GyEL2s+07TPxHb3HOwupQKZ1y2i4c=</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">3b0ee7e9a51ae4c5c7880dfeeeac9565</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNX+QRguEL4oz+kogQzTSjnw/avVHwIvCK4QwTJmettBooLnWqE3JafmjtuKXJiGKe+8f0v6wYbLnwM2fy4EcSo=</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">d8a71675a71b265ca92e3facc0edda5c</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIM5D29NgPRAP6UHvWfviHmkXUvTGAk9r2c+JcknWvle7</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="3000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ppp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="icl-twobase1" tunnel="ssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="31337"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.21.3" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.21.3</cpe></service></port>
+</ports>
+<times srtt="236676" rttvar="96665" to="623336"/>
+</host>
+<runstats><finished time="1636152584" timestr="Sat Nov  6 04:19:44 2021" summary="Nmap done at Sat Nov  6 04:19:44 2021; 1 IP address (1 host up) scanned in 365.62 seconds" elapsed="365.62" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

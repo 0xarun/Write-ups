@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostmount
+spec:
+  containers:
+  - name: shell
+    image: localhost:32000/bsnginx@sha256:59dafb4b06387083e51e2589773263ae301fe4285cfa4eb85ec5a3e70323d6bd
+    command:
+      - "bin/bash"
+      - "-c"
+      - "sleep 10000"
+    volumeMounts:
+      - name: root
+        mountPath: /opt/root
+  volumes:
+  - name: root
+    hostPath:
+      path: /
+      type: Directory
