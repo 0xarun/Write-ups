@@ -1,0 +1,12 @@
+# Nmap 7.91 scan initiated Wed Jan 19 19:17:04 2022 as: nmap -sV -sC -oA nmap/colddboxeasy 10.10.39.162
+Nmap scan report for 10.10.39.162
+Host is up (0.39s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Apache httpd 2.4.18 ((Ubuntu))
+|_http-generator: WordPress 4.1.31
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: ColddBox | One more machine
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 19 19:18:05 2022 -- 1 IP address (1 host up) scanned in 61.12 seconds
