@@ -23,6 +23,8 @@ thompson Write-up
 
 retro Write-up
 
+Team Write-up
+
 Blueprint Write-up
 
 ColddBox Easy Write-up
