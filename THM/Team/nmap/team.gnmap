@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Wed Jan 19 21:54:36 2022 as: nmap -sV -sC -oA nmap/team 10.10.11.218
+Host: 10.10.11.218 ()	Status: Up
+Host: 10.10.11.218 ()	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/closed/tcp//http///	Ignored State: filtered (997)
+# Nmap done at Wed Jan 19 21:55:27 2022 -- 1 IP address (1 host up) scanned in 51.84 seconds
