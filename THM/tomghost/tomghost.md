@@ -1,4 +1,4 @@
-# Tomghost
+# Tomghost tryhackme write-up
 
 
 
