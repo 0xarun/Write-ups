@@ -29,6 +29,8 @@ ColddBox Easy Write-up
 
 0day Write-up
 
+tomghost Write-up
+
 CherryBlossom Write-up
 
 PalsForLife Write-up
