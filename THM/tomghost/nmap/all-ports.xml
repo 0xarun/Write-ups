@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Jan 19 20:22:39 2022 as: nmap -v -p- -oA nmap/all-ports 10.10.247.170 -->
+<nmaprun scanner="nmap" args="nmap -v -p- -oA nmap/all-ports 10.10.247.170" start="1642603959" startstr="Wed Jan 19 20:22:39 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1642603959"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.247.170" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1642603959" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1642603959"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1642603959"/>
+<taskbegin task="Connect Scan" time="1642603959"/>
+<taskprogress task="Connect Scan" time="1642603990" percent="1.28" remaining="2394" etc="1642606384"/>
+<taskprogress task="Connect Scan" time="1642604020" percent="2.68" remaining="2214" etc="1642606234"/>
+<taskprogress task="Connect Scan" time="1642604194" percent="9.16" remaining="2330" etc="1642606524"/>
+<taskprogress task="Connect Scan" time="1642604224" percent="9.68" remaining="2472" etc="1642606696"/>
+<taskprogress task="Connect Scan" time="1642604257" percent="10.25" remaining="2610" etc="1642606866"/>
+<taskprogress task="Connect Scan" time="1642604302" percent="11.05" remaining="2763" etc="1642607064"/>
+<taskprogress task="Connect Scan" time="1642604359" percent="12.06" remaining="2918" etc="1642607277"/>
+<taskprogress task="Connect Scan" time="1642604437" percent="13.41" remaining="3087" etc="1642607524"/>
+<taskprogress task="Connect Scan" time="1642604551" percent="15.34" remaining="3267" etc="1642607817"/>
+<taskprogress task="Connect Scan" time="1642604932" percent="21.95" remaining="3461" etc="1642608392"/>
+<taskprogress task="Connect Scan" time="1642605697" percent="34.93" remaining="3238" etc="1642608935"/>
