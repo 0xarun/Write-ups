@@ -25,6 +25,8 @@ retro Write-up
 
 Blueprint Write-up
 
+ColddBox Easy Write-up
+
 0day Write-up
 
 CherryBlossom Write-up
