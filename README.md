@@ -23,6 +23,8 @@ thompson Write-up
 
 retro Write-up
 
+Anonforce Write-up
+
 Team Write-up
 
 Blueprint Write-up
