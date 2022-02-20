@@ -1,0 +1,2 @@
+# Nmap 7.91 scan initiated Sat Jan 22 22:47:05 2022 as: nmap -v -p- -oA nmap/all-ports 10.10.141.197
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)

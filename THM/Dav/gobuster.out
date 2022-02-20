@@ -1,0 +1,6 @@
+/.hta                 (Status: 403) [Size: 292]
+/.htpasswd            (Status: 403) [Size: 297]
+/.htaccess            (Status: 403) [Size: 297]
+/index.html           (Status: 200) [Size: 11321]
+/server-status        (Status: 403) [Size: 301]
+/webdav               (Status: 401) [Size: 460]
