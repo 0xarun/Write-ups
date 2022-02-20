@@ -1,0 +1,13 @@
+# Nmap 7.91 scan initiated Sat Jan 22 23:49:34 2022 as: nmap -p- -oA nmap/all-ports --min-rate=10000 -v 10.10.123.199
+Increasing send delay for 10.10.123.199 from 0 to 5 due to 435 out of 1448 dropped probes since last increase.
+Warning: 10.10.123.199 giving up on port because retransmission cap hit (10).
+Increasing send delay for 10.10.123.199 from 640 to 1000 due to 452 out of 1505 dropped probes since last increase.
+Nmap scan report for 10.10.123.199
+Host is up (0.20s latency).
+Not shown: 59723 closed ports, 5810 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sat Jan 22 23:50:29 2022 -- 1 IP address (1 host up) scanned in 54.93 seconds
