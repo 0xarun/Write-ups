@@ -35,6 +35,8 @@ Revenge Write-up
 
 smaggrotto Write-up
 
+Empline Write-up
+
 Team Write-up
 
 Jacobtheboss Writeup
