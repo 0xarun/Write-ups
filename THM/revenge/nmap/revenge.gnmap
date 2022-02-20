@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Thu Feb 17 12:35:09 2022 as: nmap -sC -sV -oA nmap/revenge 10.10.228.85
+Host: 10.10.228.85 ()	Status: Up
+Host: 10.10.228.85 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.14.0 (Ubuntu)/	Ignored State: closed (998)
+# Nmap done at Thu Feb 17 12:36:13 2022 -- 1 IP address (1 host up) scanned in 64.21 seconds
