@@ -1,0 +1,15 @@
+POST /api/creatures/search HTTP/1.1
+Host: 10.10.128.244
+Content-Length: 18
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Origin: http://10.10.128.244
+Referer: http://10.10.128.244/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: PHPSESSID=hsq56u8h1kdkan4ume2tfe8s7m
+Connection: close
+
+nameCreature={7*7}

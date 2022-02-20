@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sun Feb 13 15:19:08 2022 as: nmap -sC -sV -oA nmap/LabyrinthFast 10.10.128.244
+Host: 10.10.128.244 ()	Status: Up
+Host: 10.10.128.244 ()	Ports: 21/open/tcp//ftp///, 80/open/tcp//http//Apache httpd 2.4.48 ((Unix) OpenSSL|1.1.1k PHP|8.0.7 mod_perl|2.0.11 Perl|v5.32.1)/, 443/open/tcp//http//Apache httpd 2.4.48 ((Unix) OpenSSL|1.1.1k PHP|8.0.7 mod_perl|2.0.11 Perl|v5.32.1)/, 3306/open/tcp//mysql?///	Ignored State: closed (996)
+# Nmap done at Sun Feb 13 15:21:17 2022 -- 1 IP address (1 host up) scanned in 128.98 seconds

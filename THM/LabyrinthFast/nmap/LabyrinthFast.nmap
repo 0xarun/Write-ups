@@ -1,0 +1,34 @@
+# Nmap 7.91 scan initiated Sun Feb 13 15:19:08 2022 as: nmap -sC -sV -oA nmap/LabyrinthFast 10.10.128.244
+Nmap scan report for 10.10.128.244
+Host is up (0.21s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp
+| fingerprint-strings: 
+|   RTSPRequest, SMBProgNeg, SSLSessionReq: 
+|_    220 ProFTPD Server (ProFTPD) [::ffff:10.10.128.244]
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_drwxr-xr-x   3 nobody   nogroup      4096 Jun 15  2021 pub
+80/tcp   open  http    Apache httpd 2.4.48 ((Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1)
+|_http-server-header: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1
+| http-title: Login
+|_Requested resource was login.html
+443/tcp  open  http    Apache httpd 2.4.48 ((Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1)
+|_http-server-header: Apache/2.4.48 (Unix) OpenSSL/1.1.1k PHP/8.0.7 mod_perl/2.0.11 Perl/v5.32.1
+|_http-title: Bad request!
+| ssl-cert: Subject: commonName=localhost/organizationName=Apache Friends/stateOrProvinceName=Berlin/countryName=DE
+| Not valid before: 2004-10-01T09:10:30
+|_Not valid after:  2010-09-30T09:10:30
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+3306/tcp open  mysql?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port21-TCP:V=7.91%I=7%D=2/13%Time=6208D45F%P=x86_64-pc-linux-gnu%r(RTSP
+SF:Request,35,"220\x20ProFTPD\x20Server\x20\(ProFTPD\)\x20\[::ffff:10\.10\
+SF:.128\.244\]\r\n")%r(SSLSessionReq,35,"220\x20ProFTPD\x20Server\x20\(Pro
+SF:FTPD\)\x20\[::ffff:10\.10\.128\.244\]\r\n")%r(SMBProgNeg,35,"220\x20Pro
+SF:FTPD\x20Server\x20\(ProFTPD\)\x20\[::ffff:10\.10\.128\.244\]\r\n");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 13 15:21:17 2022 -- 1 IP address (1 host up) scanned in 128.98 seconds
