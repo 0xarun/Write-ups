@@ -29,9 +29,13 @@ LabyrinthFast Write-up
 
 Revenge Write-up
 
+smaggrotto Write-up
+
 Team Write-up
 
 Jacobtheboss Writeup
+
+Dav Write-up
 
 Blueprint Write-up
 
