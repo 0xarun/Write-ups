@@ -27,6 +27,8 @@ Anonforce Write-up
 
 Team Write-up
 
+Jacobtheboss Writeup
+
 Blueprint Write-up
 
 ColddBox Easy Write-up
