@@ -35,6 +35,8 @@ Jacobtheboss Writeup
 
 Blueprint Write-up
 
+toc2 Write-up
+
 ColddBox Easy Write-up
 
 0day Write-up
