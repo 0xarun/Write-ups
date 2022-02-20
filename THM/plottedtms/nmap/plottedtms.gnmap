@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sat Feb 19 12:04:52 2022 as: nmap -sC -sV -oA nmap/plottedtms 10.10.89.123
+Host: 10.10.89.123 ()	Status: Up
+Host: 10.10.89.123 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 445/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/	Ignored State: closed (997)
+# Nmap done at Sat Feb 19 12:07:30 2022 -- 1 IP address (1 host up) scanned in 157.64 seconds
