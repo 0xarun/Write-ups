@@ -25,6 +25,8 @@ retro Write-up
 
 Anonforce Write-up
 
+LabyrinthFast Write-up
+
 Team Write-up
 
 Jacobtheboss Writeup
