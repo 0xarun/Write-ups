@@ -1,0 +1,37 @@
+# Nmap 7.91 scan initiated Sat Feb 19 09:05:19 2022 as: nmap -sC -sV -oA nmap/clodvvars 10.10.53.195
+Nmap scan report for 10.10.53.195
+Host is up (0.34s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE      VERSION
+139/tcp  open  netbios-ssn?
+445/tcp  open  netbios-ssn  Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
+8080/tcp open  http         Apache httpd 2.4.29 ((Ubuntu))
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+Service Info: Host: INCOGNITO
+
+Host script results:
+|_clock-skew: mean: 33s, deviation: 1s, median: 32s
+|_nbstat: NetBIOS name: INCOGNITO, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.7.6-Ubuntu)
+|   Computer name: incognito
+|   NetBIOS computer name: INCOGNITO\x00
+|   Domain name: \x00
+|   FQDN: incognito
+|_  System time: 2022-02-19T03:38:56+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2022-02-19T03:38:55
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Feb 19 09:08:38 2022 -- 1 IP address (1 host up) scanned in 198.47 seconds
