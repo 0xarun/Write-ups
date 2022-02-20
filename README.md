@@ -27,6 +27,8 @@ Anonforce Write-up
 
 LabyrinthFast Write-up
 
+Revenge Write-up
+
 Team Write-up
 
 Jacobtheboss Writeup
