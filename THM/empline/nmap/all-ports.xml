@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Feb  9 22:07:05 2022 as: nmap -v -p- -oA nmap/all-ports -&#45;min-rate=5000 10.10.82.101 -->
+<nmaprun scanner="nmap" args="nmap -v -p- -oA nmap/all-ports -&#45;min-rate=5000 10.10.82.101" start="1644424625" startstr="Wed Feb  9 22:07:05 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1644424625"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.82.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1644424625" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1644424625"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1644424625"/>
+<taskbegin task="Connect Scan" time="1644424625"/>
+<taskend task="Connect Scan" time="1644424661" extrainfo="65535 total ports"/>
+<host starttime="1644424625" endtime="1644424661"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.82.101" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65398">
+<extrareasons reason="no-responses" count="65398"/>
+</extraports>
+<extraports state="closed" count="134">
+<extrareasons reason="conn-refused" count="134"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+</ports>
+<times srtt="264971" rttvar="1561" to="271215"/>
+</host>
+<runstats><finished time="1644424661" timestr="Wed Feb  9 22:07:41 2022" summary="Nmap done at Wed Feb  9 22:07:41 2022; 1 IP address (1 host up) scanned in 36.13 seconds" elapsed="36.13" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
