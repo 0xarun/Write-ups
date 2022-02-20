@@ -1,0 +1,2 @@
+# Nmap 7.91 scan initiated Sat Feb 12 22:53:24 2022 as: nmap -v -p- -oA nmap/all-ports -Pn jacobtheboss.box
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)

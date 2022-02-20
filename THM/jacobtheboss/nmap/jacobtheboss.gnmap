@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sat Feb 12 22:12:22 2022 as: nmap -sC -sV -oA nmap/jacobtheboss 10.10.116.132
+Host: 10.10.116.132 ()	Status: Up
+Host: 10.10.116.132 ()	Ports: 22/open/tcp//ssh//OpenSSH 7.4 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.6 ((CentOS) PHP|7.3.20)/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 1090/open/tcp//java-rmi//Java RMI/, 1098/open/tcp//java-rmi//Java RMI/, 1099/open/tcp//java-object//Java Object Serialization/, 3306/open/tcp//mysql//MariaDB (unauthorized)/, 4444/open/tcp//java-rmi//Java RMI/, 4445/open/tcp//java-object//Java Object Serialization/, 4446/open/tcp//java-object//Java Object Serialization/, 8009/open/tcp//ajp13//Apache Jserv (Protocol v1.3)/, 8083/open/tcp//http//JBoss service httpd/	Ignored State: closed (988)
+# Nmap done at Sat Feb 12 22:13:51 2022 -- 1 IP address (1 host up) scanned in 89.07 seconds

@@ -1,0 +1,70 @@
+# Nmap 7.91 scan initiated Sat Feb 12 22:12:22 2022 as: nmap -sC -sV -oA nmap/jacobtheboss 10.10.116.132
+Nmap scan report for 10.10.116.132
+Host is up (0.31s latency).
+Not shown: 988 closed ports
+PORT     STATE SERVICE     VERSION
+22/tcp   open  ssh         OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 82:ca:13:6e:d9:63:c0:5f:4a:23:a5:a5:a5:10:3c:7f (RSA)
+|   256 a4:6e:d2:5d:0d:36:2e:73:2f:1d:52:9c:e5:8a:7b:04 (ECDSA)
+|_  256 6f:54:a6:5e:ba:5b:ad:cc:87:ee:d3:a8:d5:e0:aa:2a (ED25519)
+80/tcp   open  http        Apache httpd 2.4.6 ((CentOS) PHP/7.3.20)
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/7.3.20
+|_http-title: My first blog
+111/tcp  open  rpcbind     2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+1090/tcp open  java-rmi    Java RMI
+|_rmi-dumpregistry: ERROR: Script execution failed (use -d to debug)
+1098/tcp open  java-rmi    Java RMI
+1099/tcp open  java-object Java Object Serialization
+| fingerprint-strings: 
+|   NULL: 
+|     java.rmi.MarshalledObject|
+|     hash[
+|     locBytest
+|     objBytesq
+|     http://jacobtheboss.box:8083/q
+|     org.jnp.server.NamingServer_Stub
+|     java.rmi.server.RemoteStub
+|     java.rmi.server.RemoteObject
+|     xpw;
+|     UnicastRef2
+|_    jacobtheboss.box
+3306/tcp open  mysql       MariaDB (unauthorized)
+4444/tcp open  java-rmi    Java RMI
+4445/tcp open  java-object Java Object Serialization
+4446/tcp open  java-object Java Object Serialization
+8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
+| ajp-methods: 
+|   Supported methods: GET HEAD POST PUT DELETE TRACE OPTIONS
+|   Potentially risky methods: PUT DELETE TRACE
+|_  See https://nmap.org/nsedoc/scripts/ajp-methods.html
+8083/tcp open  http        JBoss service httpd
+|_http-title: Site doesn't have a title (text/html).
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port1099-TCP:V=7.91%I=7%D=2/12%Time=6207E391%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,16F,"\xac\xed\0\x05sr\0\x19java\.rmi\.MarshalledObject\|\xbd\x1e\x97
+SF:\xedc\xfc>\x02\0\x03I\0\x04hash\[\0\x08locBytest\0\x02\[B\[\0\x08objByt
+SF:esq\0~\0\x01xp\+\xd2\x99@ur\0\x02\[B\xac\xf3\x17\xf8\x06\x08T\xe0\x02\0
+SF:\0xp\0\0\0\.\xac\xed\0\x05t\0\x1dhttp://jacobtheboss\.box:8083/q\0~\0\0
+SF:q\0~\0\0uq\0~\0\x03\0\0\0\xc7\xac\xed\0\x05sr\0\x20org\.jnp\.server\.Na
+SF:mingServer_Stub\0\0\0\0\0\0\0\x02\x02\0\0xr\0\x1ajava\.rmi\.server\.Rem
+SF:oteStub\xe9\xfe\xdc\xc9\x8b\xe1e\x1a\x02\0\0xr\0\x1cjava\.rmi\.server\.
+SF:RemoteObject\xd3a\xb4\x91\x0ca3\x1e\x03\0\0xpw;\0\x0bUnicastRef2\0\0\x1
+SF:0jacobtheboss\.box\0\0\x04J\0\0\0\0\0\0\0\0>\x9aZ\x83\0\0\x01~\xee\xd0\
+SF:xa67\x80\0\0x");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port4445-TCP:V=7.91%I=7%D=2/12%Time=6207E397%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4,"\xac\xed\0\x05");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port4446-TCP:V=7.91%I=7%D=2/12%Time=6207E397%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,4,"\xac\xed\0\x05");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Feb 12 22:13:51 2022 -- 1 IP address (1 host up) scanned in 89.07 seconds

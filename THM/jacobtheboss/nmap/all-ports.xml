@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Feb 12 22:53:24 2022 as: nmap -v -p- -oA nmap/all-ports -Pn jacobtheboss.box -->
+<nmaprun scanner="nmap" args="nmap -v -p- -oA nmap/all-ports -Pn jacobtheboss.box" start="1644686604" startstr="Sat Feb 12 22:53:24 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Connect Scan" time="1644686604"/>
+<taskprogress task="Connect Scan" time="1644686635" percent="1.20" remaining="2553" etc="1644689188"/>
+<taskprogress task="Connect Scan" time="1644686665" percent="2.15" remaining="2773" etc="1644689437"/>
+<taskprogress task="Connect Scan" time="1644686695" percent="2.99" remaining="2956" etc="1644689651"/>
+<taskprogress task="Connect Scan" time="1644686761" percent="5.34" remaining="2782" etc="1644689543"/>
+<taskprogress task="Connect Scan" time="1644686791" percent="6.80" remaining="2565" etc="1644689355"/>
