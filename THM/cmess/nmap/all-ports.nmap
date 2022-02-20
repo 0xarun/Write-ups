@@ -1,0 +1,15 @@
+# Nmap 7.91 scan initiated Mon Jan 31 22:23:15 2022 as: nmap -v -p- -oA nmap/all-ports --min-rate=10000 cmess.thm
+Increasing send delay for 10.10.247.100 from 0 to 5 due to 81 out of 268 dropped probes since last increase.
+Increasing send delay for 10.10.247.100 from 5 to 10 due to 127 out of 423 dropped probes since last increase.
+Increasing send delay for 10.10.247.100 from 10 to 20 due to 55 out of 182 dropped probes since last increase.
+Increasing send delay for 10.10.247.100 from 160 to 320 due to 473 out of 1575 dropped probes since last increase.
+Warning: 10.10.247.100 giving up on port because retransmission cap hit (10).
+Nmap scan report for cmess.thm (10.10.247.100)
+Host is up (0.21s latency).
+Not shown: 40107 closed ports, 25426 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Mon Jan 31 22:24:51 2022 -- 1 IP address (1 host up) scanned in 96.75 seconds

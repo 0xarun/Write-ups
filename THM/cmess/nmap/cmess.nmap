@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Mon Jan 31 21:51:57 2022 as: nmap -sC -sV -oA nmap/cmess 10.10.247.100
