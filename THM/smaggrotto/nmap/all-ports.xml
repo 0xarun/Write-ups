@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Jan 26 17:06:50 2022 as: nmap -v -p- -oA nmap/all-ports 10.10.229.183 -->
+<nmaprun scanner="nmap" args="nmap -v -p- -oA nmap/all-ports 10.10.229.183" start="1643197010" startstr="Wed Jan 26 17:06:50 2022" version="7.91" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1643197010"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.229.183" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1643197011" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1643197011"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1643197011"/>
+<taskbegin task="Connect Scan" time="1643197011"/>
+<taskprogress task="Connect Scan" time="1643197042" percent="1.80" remaining="1687" etc="1643198729"/>
+<taskprogress task="Connect Scan" time="1643197072" percent="2.75" remaining="2158" etc="1643199229"/>
+<taskprogress task="Connect Scan" time="1643197102" percent="4.58" remaining="1897" etc="1643198998"/>
+<taskprogress task="Connect Scan" time="1643197177" percent="8.46" remaining="1797" etc="1643198973"/>
+<taskprogress task="Connect Scan" time="1643197366" percent="17.31" remaining="1696" etc="1643199062"/>
+<taskprogress task="Connect Scan" time="1643197552" percent="23.11" remaining="1801" etc="1643199352"/>
