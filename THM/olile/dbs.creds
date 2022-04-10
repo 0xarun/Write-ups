@@ -1,0 +1,6 @@
+$db['host'] = 'localhost';
+$db['user'] = 'phpipam_ollie';
+$db['pass'] = 'IamDah1337estHackerDog!';
+$db['name'] = 'phpipam';
+$db['port'] = 3306;
+

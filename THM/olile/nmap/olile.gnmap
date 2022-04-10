@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sun Apr 10 00:11:18 2022 as: nmap -sC -sV -oA nmap/olile 10.10.251.38
+Host: 10.10.251.38 ()	Status: Up
+Host: 10.10.251.38 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 464/filtered/tcp//kpasswd5///	Ignored State: closed (997)
+# Nmap done at Sun Apr 10 00:12:03 2022 -- 1 IP address (1 host up) scanned in 44.44 seconds

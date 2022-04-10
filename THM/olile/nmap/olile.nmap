@@ -1,0 +1,21 @@
+# Nmap 7.91 scan initiated Sun Apr 10 00:11:18 2022 as: nmap -sC -sV -oA nmap/olile 10.10.251.38
+Nmap scan report for 10.10.251.38
+Host is up (0.20s latency).
+Not shown: 997 closed ports
+PORT    STATE    SERVICE  VERSION
+22/tcp  open     ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 b7:1b:a8:f8:8c:8a:4a:53:55:c0:2e:89:01:f2:56:69 (RSA)
+|   256 4e:27:43:b6:f4:54:f9:18:d0:38:da:cd:76:9b:85:48 (ECDSA)
+|_  256 14:82:ca:bb:04:e5:01:83:9c:d6:54:e9:d1:fa:c4:82 (ED25519)
+80/tcp  open     http     Apache httpd 2.4.41 ((Ubuntu))
+| http-robots.txt: 2 disallowed entries 
+|_/ /immaolllieeboyyy
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-title: Ollie :: login
+|_Requested resource was http://10.10.251.38/index.php?page=login
+464/tcp filtered kpasswd5
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr 10 00:12:03 2022 -- 1 IP address (1 host up) scanned in 44.44 seconds
