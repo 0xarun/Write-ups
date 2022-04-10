@@ -9,4 +9,4 @@
 ## root
 
 1. pspy64.
-2. /usr/bin/feedme binary runs root that has writeable perm by user ollie.
+2. Check /usr/bin/feedme binary.
