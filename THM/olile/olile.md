@@ -1,4 +1,4 @@
-# Ollie THM
+# Ollie THM Writeup (Simple Notes)
 
 ## User
 
@@ -7,5 +7,6 @@
 
 ## root
 
-1. feedme binary runs root that has writeable perm by user ollie.
+1. pspy64
+2. /usr/bin/feedme binary runs root that has writeable perm by user ollie.
 
