@@ -1,4 +1,4 @@
-# Agent-T THM
+# Agent-T Tryhackme Writeup
 
 1. PHP 8.1.0-dev - 'User-Agentt' Remote Code Execution
 
