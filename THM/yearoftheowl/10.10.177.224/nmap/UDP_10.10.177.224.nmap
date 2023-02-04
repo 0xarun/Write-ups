@@ -1,0 +1,7 @@
+# Nmap 7.92 scan initiated Fri Feb  3 11:59:03 2023 as: /usr/bin/nmap -Pn -sU --max-retries 1 --open --open -oN nmap/UDP_10.10.177.224.nmap --system-dns --stats-every 3s 10.10.177.224
+Nmap scan report for 10.10.177.224
+Host is up.
+All 1000 scanned ports on 10.10.177.224 are in ignored states.
+Not shown: 1000 open|filtered udp ports (no-response)
+
+# Nmap done at Fri Feb  3 12:02:24 2023 -- 1 IP address (1 host up) scanned in 201.52 seconds

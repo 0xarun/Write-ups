@@ -1,0 +1,53 @@
+# Nmap 7.92 scan initiated Fri Feb  3 11:53:05 2023 as: /usr/bin/nmap -Pn -sCV -p80,139,443,445,3306,3389 --open -oN nmap/Script_10.10.177.224.nmap --system-dns --stats-every 2s 10.10.177.224
+Nmap scan report for 10.10.177.224
+Host is up (0.23s latency).
+
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.10
+|_http-title: Year of the Owl
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.10
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=localhost
+| Not valid before: 2009-11-10T23:48:47
+|_Not valid after:  2019-11-08T23:48:47
+| tls-alpn: 
+|_  http/1.1
+|_http-title: 400 Bad Request
+445/tcp  open  microsoft-ds?
+3306/tcp open  mysql?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, NULL, TLSSessionReq: 
+|_    Host 'ip-10-9-3-94.eu-west-1.compute.internal' is not allowed to connect to this MariaDB server
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2023-02-03T17:54:52+00:00; +1h00m40s from scanner time.
+| ssl-cert: Subject: commonName=year-of-the-owl
+| Not valid before: 2023-02-02T17:53:06
+|_Not valid after:  2023-08-04T17:53:06
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.92%I=7%D=2/3%Time=63DD3BF6%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.inte
+SF:rnal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB
+SF:\x20server")%r(DNSVersionBindReqTCP,66,"b\0\0\x01\xffj\x04Host\x20'ip-1
+SF:0-9-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x
+SF:20connect\x20to\x20this\x20MariaDB\x20server")%r(DNSStatusRequestTCP,66
+SF:,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal
+SF:'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20
+SF:server")%r(TLSSessionReq,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.e
+SF:u-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connect\x
+SF:20to\x20this\x20MariaDB\x20server");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h00m39s, deviation: 0s, median: 1h00m39s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2023-02-03T17:54:14
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  3 11:54:14 2023 -- 1 IP address (1 host up) scanned in 69.05 seconds

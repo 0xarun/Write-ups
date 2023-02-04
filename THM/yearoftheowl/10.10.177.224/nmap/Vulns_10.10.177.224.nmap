@@ -1,0 +1,112 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.92 scan initiated Fri Feb  3 12:03:04 2023 as: /usr/bin/nmap -Pn -sV --script vuln -p80,139,443,445,3306,3389,80,139,443,445,3306,3389,5985,47001 --open -oN nmap/Vulns_10.10.177.224.nmap --system-dns --stats-every 3s 10.10.177.224
+Nmap scan report for 10.10.177.224
+Host is up (0.24s latency).
+
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-trace: TRACE is enabled
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.10
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http      Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|_  /icons/: Potentially interesting folder w/ directory listing
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.10
+|_http-trace: TRACE is enabled
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 8
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+445/tcp   open  microsoft-ds?
+3306/tcp  open  mysql?
+|_mysql-vuln-cve2012-2122: ERROR: Script execution failed (use -d to debug)
+| fingerprint-strings: 
+|   LPDString, NULL, RTSPRequest, SMBProgNeg, WMSRequest, ms-sql-s: 
+|_    Host 'ip-10-9-3-94.eu-west-1.compute.internal' is not allowed to connect to this MariaDB server
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.92%I=7%D=2/3%Time=63DD3E54%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.inte
+SF:rnal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB
+SF:\x20server")%r(RTSPRequest,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\
+SF:.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connect
+SF:\x20to\x20this\x20MariaDB\x20server")%r(SMBProgNeg,66,"b\0\0\x01\xffj\x
+SF:04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20
+SF:allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(LPDStri
+SF:ng,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.int
+SF:ernal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaD
+SF:B\x20server")%r(WMSRequest,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\
+SF:.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connect
+SF:\x20to\x20this\x20MariaDB\x20server")%r(ms-sql-s,66,"b\0\0\x01\xffj\x04
+SF:Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_samba-vuln-cve-2012-1182: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+|_smb-vuln-ms10-061: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  3 12:24:13 2023 -- 1 IP address (1 host up) scanned in 1268.97 seconds

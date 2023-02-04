@@ -1,0 +1,90 @@
+WARNING: Duplicate port number(s) specified.  Are you alert enough to be using Nmap?  Have some coffee or Jolt(tm).
+# Nmap 7.92 scan initiated Fri Feb  3 12:02:27 2023 as: /usr/bin/nmap -Pn -sV --script vulners --script-args mincvss=7.0 -p80,139,443,445,3306,3389,80,139,443,445,3306,3389,5985,47001 --open -oN nmap/CVEs_10.10.177.224.nmap --system-dns --stats-every 3s 10.10.177.224
+Nmap scan report for 10.10.177.224
+Host is up (0.23s latency).
+
+PORT      STATE SERVICE       VERSION
+80/tcp    open  http          Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.10
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.46: 
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
+|     	CNVD-2022-73123	7.5	https://vulners.com/cnvd/CNVD-2022-73123
+|     	CNVD-2022-03225	7.5	https://vulners.com/cnvd/CNVD-2022-03225
+|     	CNVD-2021-102386	7.5	https://vulners.com/cnvd/CNVD-2021-102386
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|_    	0095E929-7573-5E4A-A7FA-F6598A35E8DE	6.8	https://vulners.com/githubexploit/0095E929-7573-5E4A-A7FA-F6598A35E8DE	*EXPLOIT*
+139/tcp   open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http      Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1g PHP/7.4.10)
+| vulners: 
+|   cpe:/a:apache:http_server:2.4.46: 
+|     	CVE-2022-31813	7.5	https://vulners.com/cve/CVE-2022-31813
+|     	CVE-2022-23943	7.5	https://vulners.com/cve/CVE-2022-23943
+|     	CVE-2022-22720	7.5	https://vulners.com/cve/CVE-2022-22720
+|     	CVE-2021-44790	7.5	https://vulners.com/cve/CVE-2021-44790
+|     	CVE-2021-39275	7.5	https://vulners.com/cve/CVE-2021-39275
+|     	CVE-2021-26691	7.5	https://vulners.com/cve/CVE-2021-26691
+|     	CNVD-2022-73123	7.5	https://vulners.com/cnvd/CNVD-2022-73123
+|     	CNVD-2022-03225	7.5	https://vulners.com/cnvd/CNVD-2022-03225
+|     	CNVD-2021-102386	7.5	https://vulners.com/cnvd/CNVD-2021-102386
+|     	FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	6.8	https://vulners.com/githubexploit/FDF3DFA1-ED74-5EE2-BF5C-BA752CA34AE8	*EXPLOIT*
+|     	8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	6.8	https://vulners.com/githubexploit/8AFB43C5-ABD4-52AD-BB19-24D7884FF2A2	*EXPLOIT*
+|     	4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	6.8	https://vulners.com/githubexploit/4810E2D9-AC5F-5B08-BFB3-DDAFA2F63332	*EXPLOIT*
+|     	4373C92A-2755-5538-9C91-0469C995AA9B	6.8	https://vulners.com/githubexploit/4373C92A-2755-5538-9C91-0469C995AA9B	*EXPLOIT*
+|_    	0095E929-7573-5E4A-A7FA-F6598A35E8DE	6.8	https://vulners.com/githubexploit/0095E929-7573-5E4A-A7FA-F6598A35E8DE	*EXPLOIT*
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1g PHP/7.4.10
+445/tcp   open  microsoft-ds?
+3306/tcp  open  mysql?
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP, FourOhFourRequest, JavaRMI, LDAPBindReq, LPDString, NCP, NULL, NotesRPC, RTSPRequest, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer: 
+|_    Host 'ip-10-9-3-94.eu-west-1.compute.internal' is not allowed to connect to this MariaDB server
+3389/tcp  open  ms-wbt-server Microsoft Terminal Services
+5985/tcp  open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+47001/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.92%I=7%D=2/3%Time=63DD3E25%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.inte
+SF:rnal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB
+SF:\x20server")%r(RTSPRequest,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\
+SF:.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connect
+SF:\x20to\x20this\x20MariaDB\x20server")%r(DNSVersionBindReqTCP,66,"b\0\0\
+SF:x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'\x20is\
+SF:x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")
+SF:%r(SSLSessionReq,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1
+SF:\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20
+SF:this\x20MariaDB\x20server")%r(TLSSessionReq,66,"b\0\0\x01\xffj\x04Host\
+SF:x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed
+SF:\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(SMBProgNeg,66,
+SF:"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'
+SF:\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20s
+SF:erver")%r(FourOhFourRequest,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94
+SF:\.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connec
+SF:t\x20to\x20this\x20MariaDB\x20server")%r(LPDString,66,"b\0\0\x01\xffj\x
+SF:04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20
+SF:allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(LDAPBin
+SF:dReq,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.i
+SF:nternal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20Mari
+SF:aDB\x20server")%r(TerminalServer,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9
+SF:-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20c
+SF:onnect\x20to\x20this\x20MariaDB\x20server")%r(NCP,66,"b\0\0\x01\xffj\x0
+SF:4Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.internal'\x20is\x20not\x20a
+SF:llowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(NotesRPC
+SF:,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-west-1\.compute\.inter
+SF:nal'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\
+SF:x20server")%r(JavaRMI,66,"b\0\0\x01\xffj\x04Host\x20'ip-10-9-3-94\.eu-w
+SF:est-1\.compute\.internal'\x20is\x20not\x20allowed\x20to\x20connect\x20t
+SF:o\x20this\x20MariaDB\x20server");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb  3 12:03:02 2023 -- 1 IP address (1 host up) scanned in 34.89 seconds

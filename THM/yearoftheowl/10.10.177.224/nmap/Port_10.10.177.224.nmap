@@ -1,0 +1,14 @@
+# Nmap 7.92 scan initiated Fri Feb  3 11:52:48 2023 as: /usr/bin/nmap -Pn -T4 --max-retries 1 --max-scan-delay 20 --open -oN nmap/Port_10.10.177.224.nmap --system-dns --stats-every 1s 10.10.177.224
+Nmap scan report for 10.10.177.224
+Host is up (0.25s latency).
+Not shown: 994 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+3306/tcp open  mysql
+3389/tcp open  ms-wbt-server
+
+# Nmap done at Fri Feb  3 11:53:05 2023 -- 1 IP address (1 host up) scanned in 17.60 seconds
