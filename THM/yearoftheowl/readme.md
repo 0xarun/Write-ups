@@ -1,6 +1,7 @@
+Year of the Owl Tryhackme Writeup
 
 ### Nmap
-
+```
 PORT      STATE SERVICE
 80/tcp    open  http
 139/tcp   open  netbios-ssn
@@ -10,7 +11,7 @@ PORT      STATE SERVICE
 3389/tcp  open  ms-wbt-server
 5985/tcp  open  wsman
 47001/tcp open  winrm
-
+```
 UDP port SNMP 161 open
 
 snmp-check 10.10.233.57 -c openview
